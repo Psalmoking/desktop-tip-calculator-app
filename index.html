@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- script -->
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-section input">
+        <div>
+          <h3 class="bill">Bill</h3>
+          <input class="input-bill calc-input" type="text" />
+        </div>
+        <div>
+          <h3 class="select-tip">Select Tip %</h3>
+          <div class="tip-percentages">
+            <div class="tip tip-percentage">5%</div>
+            <div class="tip tip-percentage">10%</div>
+            <div class="tip tip-percentage">15%</div>
+            <div class="tip tip-percentage">25%</div>
+            <div class="tip tip-percentage">50%</div>
+            <div class="tip custom-tip">Custom</div>
+            <input class="custom-tip-percentage tip-hidden" type="text" />
+          </div>
+        </div>
+        <div>
+          <div class="no-description">
+            <h3 class="no-of-ppl">Number of People</h3>
+            <h3 class="invalid-input">Can't be zero</h3>
+          </div>
+          <input class="input-number calc-input" type="text" />
+        </div>
+      </div>
+      <div class="calculator-section result">
+        <div>
+          <div class="tip-summary">
+            <div>
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <h1 class="tip-per-person">$0.00</h1>
+          </div>
+          <div class="tip-summary">
+            <div>
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <h1 class="tip-total">$0.00</h1>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-calculate">CALCULATE</button>
+          <button class="btn btn-reset">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Samuel Adeleke</a>.
+    </div>
+  </body>
+</html>
